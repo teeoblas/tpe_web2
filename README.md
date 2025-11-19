@@ -20,6 +20,7 @@ Ubicación: `/tpe_api`
 ### 2. [Aplicación Web MVC](./tpe_parte_2)
 Ubicación: `/tpeweb2`
 * Re-entrega del trabajo práctico anterior.
+* **Leer documentación completa en:** [tpe_api/README.md](./tpeweb2/README.md)
 
 ## 🛠️ Instalación General
 1. Clonar este repositorio.
