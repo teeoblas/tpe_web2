@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listado vehiculos</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+    <h1>Lista de Vehículos</h1>
+    <ul>
+        <?php foreach ($cars as $car): ?>
+            <li>
+                <!-- link con el modelo del vehiculo   -->
+                <a href="<?= BASE_URL ?>vehiculo/<?= $car->id_vehiculo ?>"><?= $car->modelo ?></a>
+                <a href="<?= BASE_URL ?>vehiculo/<?= $car->id_vehiculo ?>">detalle</a>
+
+                <?php if (UserSession::activeUser()): ?>
+                    <!--por cada link se crea un boton para agregar un vehiculo-->
+                    <a href="<?= BASE_URL ?>borrarCar/<?= $car->id_vehiculo ?>">borrar </a>
+                    <a href="<?= BASE_URL ?>editCar/<?= $car->id_vehiculo ?>">editar</a>
+                <?php endif ?>
+            </li>
+        <?php endforeach; ?>
+
+        <?php if (UserSession::activeUser()): ?>
+            <a href="<?= BASE_URL ?>agregarCar">Insertar nuevo vehículo</a>
+        <?php endif ?>
+
+
+
+
+    </ul>
+
+</body>
+
+</html>

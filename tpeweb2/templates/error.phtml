@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/style.css">
+</head>
+
+<body>
+    <?php if (!empty($error)): ?>
+        <div class="alert-overlay" id="alertOverlay">
+            <div class="alert-modal">
+                <?= htmlspecialchars($error) ?>
+                <br>
+                <button
+                    onclick="document.getElementById('alertOverlay').remove(); window.location.href='<?= BASE_URL ?>login';">Cerrar</button>
+                <br>
+                <a href="<?= BASE_URL ?>login" style="color:white; text-decoration:underline;">Iniciar sesión</a>
+            </div>
+        </div>
+    <?php endif; ?>
+
+
+
+
+</body>
+
+</html>

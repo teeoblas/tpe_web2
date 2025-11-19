@@ -1,0 +1,19 @@
+# Activa el motor de reescritura de Apache
+RewriteEngine On
+
+# Regla 1: Pasa el encabezado "Authorization"
+# (Para que funcione el login con Basic Auth)
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Regla 2: URL Semánticas (La regla que SÍ funciona)
+# Si la petición no es un archivo real...
+RewriteCond %{REQUEST_FILENAME} !-f
+# Ni un directorio real...
+RewriteCond %{REQUEST_FILENAME} !-d
+# ...entonces, reenvía (reescribe) la URL a api_router.php
+#
+# ^(.*)$ captura CUALQUIER COSA (ej: "marcas" o "cars/1")
+# y la pasa como el parámetro 'resource'
+# [QSA] conserva los ?sort=...
+RewriteRule ^(.*)$ api_router.php?resource=$1 [QSA,L]

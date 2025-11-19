@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Vehículo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+    
+    <h1>Agregar Marca</h1>
+
+    <form action="/tpeweb2/router.php?action=insertarMarca" method="POST">
+        <label for="marca">marca:</label>
+        <input type="text" id="marca" name="marca" placeholder="Ej: toyota" required>
+        <br>
+
+        <label for="info_general">informacion general:</label>
+        <input type="text" id="info_general" name="info_general" required>
+        <br>
+
+        <label for="cant_concesionarias_ofi">cantidad de concesionarias oficiales:</label>
+        <input type="text" id="cant_concesionarias_ofi" name="cant_concesionarias_ofi"  required>
+        <br>
+
+        <label for="post_venta">post venta:</label>
+        <input type="text" id="post_venta" name="post_venta" placeholder="link de servicio oficial de la marca" required>
+        <br>
+
+
+        <button type="submit">Agregar Marca</button>    
+    </form>
+    
+    
+</body>
+
+</html>

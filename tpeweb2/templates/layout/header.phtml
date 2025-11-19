@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="<?php echo BASE_URL ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUDAI - CONCESIONARIA</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="<?= BASE_URL ?>">TUDAI - CONCESIONARIA</a>
+                <div>
+                    <ul>
+                        <li><a href="<?= BASE_URL ?>concesionaria">Concesionaria</a></li>
+                        <li><a href="<?= BASE_URL ?>vehiculos">Vehículos</a></li>
+                        <li><a href="<?= BASE_URL ?>marcas">Marcas</a></li>
+                        <li>
+                            <?php if (isset($user)): ?> 
+                                <span>Hola, <?= $user->username; ?></span>
+                                <a href="<?= BASE_URL ?>logout">Salir</a>
+                            <?php else: ?>
+                                <a href="<?= BASE_URL ?>login">Ingresar</a>
+                            <?php endif; ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>

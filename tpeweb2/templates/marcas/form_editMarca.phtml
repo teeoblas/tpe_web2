@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Vehículo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+    
+    <h1>Editar Marca</h1>
+
+    <form action="<?= BASE_URL ?>editMarca/<?= $marca->id_marca ?>" method="POST">
+        <input type="hidden" name="id_marca" value="<?= $marca->id_marca ?>">
+
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" value="<?= $marca->marca ?>" required>
+
+        <label for="info_general">Información general:</label>
+        <input type="text" id="info_general" name="info_general" value="<?= $marca->info_general ?>" required>
+
+        <label for="cant_concesionarias_ofi">Cantidad de concesionarias oficiales:</label>
+        <input type="text" id="cant_concesionarias_ofi" name="cant_concesionarias_ofi"
+            value="<?= $marca->cant_concesionarias_ofi ?>" required>
+
+        <label for="post_venta">Post venta:</label>
+        <input type="text" id="post_venta" name="post_venta" value="<?= $marca->post_venta ?>" required>
+
+        <button type="submit">Editar Marca</button>
+    </form>
+
+   
+</body>
+
+</html>
