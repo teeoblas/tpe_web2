@@ -34,30 +34,30 @@ Para realizar operaciones de escritura (POST, PUT, DELETE) es necesario obtener 
 | Método | Endpoint | Descripción |
 | :--- | :--- | :--- |
 | **GET** | `/tpe_api/marcas` | Listar todas las marcas |
-| **GET** | `/tpe_api/marcas/id` | Ver una marca específica |
+| **GET** | `/tpe_api/marcas/:id` | Ver una marca específica |
 | **POST** | `/tpe_api/marcas` | Crear una nueva marca (Requiere Token) |
-| **PUT** | `/tpe_api/marcas/id` | Modificar una marca existente (Requiere Token) |
-| **DELETE** | `/tpe_api/marcas/id` | Eliminar una marca (Requiere Token) |
+| **PUT** | `/tpe_api/marcas/:id` | Modificar una marca existente (Requiere Token) |
+| **DELETE** | `/tpe_api/marcas/:id` | Eliminar una marca (Requiere Token) |
 
 ### 🚗 Vehículos (Cars)
 
 | Método | Endpoint | Descripción |
 | :--- | :--- | :--- |
 | **GET** | `/tpe_api/cars` | Listar todos los vehículos |
-| **GET** | `/tpe_api/cars/id` | Ver un vehículo específico |
+| **GET** | `/tpe_api/cars/:id` | Ver un vehículo específico |
 | **POST** | `/tpe_api/cars` | Crear un nuevo vehículo (Requiere Token) |
-| **PUT** | `/tpe_api/cars/id` | Modificar un vehículo existente (Requiere Token) |
-| **DELETE** | `/tpe_api/cars/id` | Eliminar un vehículo (Requiere Token) |
+| **PUT** | `/tpe_api/cars/:id` | Modificar un vehículo existente (Requiere Token) |
+| **DELETE** | `/tpe_api/cars/:id` | Eliminar un vehículo (Requiere Token) |
 
 ### 💬 Comentarios
 
 | Método | Endpoint | Descripción |
 | :--- | :--- | :--- |
 | **GET** | `/tpe_api/comentarios` | Listar todos los comentarios |
-| **GET** | `/tpe_api/comentarios/id` | Ver un comentario específico |
+| **GET** | `/tpe_api/comentarios/:id` | Ver un comentario específico |
 | **POST** | `/tpe_api/comentarios` | Publicar un comentario (Requiere Token) |
-| **PUT** | `/tpe_api/comentarios/id` | Modificar un comentario (Requiere Token) |
-| **DELETE** | `/tpe_api/comentarios/id` | Eliminar un comentario (Requiere Token) |
+| **PUT** | `/tpe_api/comentarios/:id` | Modificar un comentario (Requiere Token) |
+| **DELETE** | `/tpe_api/comentarios/:id` | Eliminar un comentario (Requiere Token) |
 
 ---
 
