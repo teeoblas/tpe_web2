@@ -8,7 +8,7 @@ Este repositorio contiene la entrega completa de la materia, unificando la Aplic
 - Thomas Arnaiz – thomas1122arna@gmail.com  
   (encargado de la parte B del proyecto)  
 
-## e📂 Estructura del Repositorio
+## 📂 Estructura del Repositorio
 
 ### 1. [API RESTful](./tpe_api)
 Ubicación: `/tpe_api`
