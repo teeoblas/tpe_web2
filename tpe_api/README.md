@@ -27,7 +27,7 @@ Para realizar operaciones de escritura (POST, PUT, DELETE) es necesario obtener 
 
 ---
 
-## 📡 Documentación de Endpoints
+## 📡 endpoints para consumir la api mediante postman
 
 ### 🏷️ Marcas
 
