@@ -1,6 +1,6 @@
 # Trabajo Práctico Especial - Web 2 (Entrega Final)
 
-Este repositorio contiene la entrega completa de la materia, unificando la Aplicación Web (MVC) y la API RESTful.
+Este repositorio contiene la API RESTful.
 
 ## Integrantes del grupo
 - Teo Iván Blas García – teoblas71@gmail.com  
@@ -16,11 +16,6 @@ Ubicación: `/tpe_api`
 * Permite leer, crear, editar y borrar (CRUD) Marcas, Vehículos y Comentarios.
 * Incluye autenticación JWT y ordenamiento/filtrado.
 * **Leer documentación completa en:** [tpe_api/README.md](./tpe_api/README.md)
-
-### 2. [Aplicación Web MVC](./tpe_parte_2)
-Ubicación: `/tpeweb2`
-* Re-entrega del trabajo práctico anterior.
-* **Leer documentación completa en:** [tpe_api/README.md](./tpeweb2/README.md)
 
 ## 🛠️ Instalación General
 1. Clonar este repositorio.
